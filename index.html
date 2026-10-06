@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SURAJ TOY | Online Toy Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">🧸 SURAJ TOY Boy </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#toys">Toys</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>SURAJ <span>TOY</span></h1>
+
+            <h2>Make Childhood More Colorful 🌈</h2>
+
+            <p>
+                Fun, safe and exciting toys for kids of all ages.
+            </p>
+
+            <button onclick="goToToys()" class="shop-button">
+                Shop Now 🛍️
+            </button>
+
+        </div>
+
+        <div class="hero-toy">
+            🧸
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature">
+            🚚
+            <h3>Fast Delivery</h3>
+            <p>Home delivery available</p>
+        </div>
+
+        <div class="feature">
+            💳
+            <h3>Online Payment</h3>
+            <p>UPI / Card / Net Banking</p>
+        </div>
+
+        <div class="feature">
+            🔒
+            <h3>Safe Shopping</h3>
+            <p>Secure ordering</p>
+        </div>
+
+        <div class="feature">
+            ⭐
+            <h3>Best Toys</h3>
+            <p>Fun for every child</p>
+        </div>
+
+    </section>
+
+
+    <!-- TOYS -->
+    <section class="toy-section" id="toys">
+
+        <div class="section-title">
+            <p>OUR COLLECTION</p>
+            <h2>Popular Toys 🎁</h2>
+        </div>
+
+        <div class="toy-container">
+
+
+            <!-- TOY 1 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=600&q=80"
+                        alt="Teddy Bear">
+                </div>
+
+                <h3>Teddy Bear</h3>
+
+                <p>Soft and cute teddy bear.</p>
+
+                <div class="price">₹399</div>
+
+                <button onclick="addToCart('Teddy Bear', 399)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- TOY 2 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80"
+                        alt="Toy Car">
+                </div>
+
+                <h3>Remote Car</h3>
+
+                <p>Fun remote control car.</p>
+
+                <div class="price">₹799</div>
+
+                <button onclick="addToCart('Remote Car', 799)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- TOY 3 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1560961911-ba7ef651a56c?auto=format&fit=crop&w=600&q=80"
+                        alt="Robot Toy">
+                </div>
+
+                <h3>Robot Toy</h3>
+
+                <p>Interactive robot toy.</p>
+
+                <div class="price">₹599</div>
+
+                <button onclick="addToCart('Robot Toy', 599)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- TOY 4 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?auto=format&fit=crop&w=600&q=80"
+                        alt="Puzzle">
+                </div>
+
+                <h3>Kids Puzzle</h3>
+
+                <p>Educational puzzle game.</p>
+
+                <div class="price">₹199</div>
+
+                <button onclick="addToCart('Kids Puzzle', 199)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- TOY 5 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80"
+                        alt="Building Blocks">
+                </div>
+
+                <h3>Building Blocks</h3>
+
+                <p>Creative building blocks.</p>
+
+                <div class="price">₹399</div>
+
+                <button onclick="addToCart('Building Blocks', 399)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- TOY 6 -->
+            <div class="toy-card">
+
+                <div class="toy-image">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=600&q=80"
+                        alt="Toy Train">
+                </div>
+
+                <h3>Toy Train</h3>
+
+                <p>Colorful toy train.</p>
+
+                <div class="price">₹299</div>
+
+                <button onclick="addToCart('Toy Train', 299)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-box">
+
+            <p>ABOUT US</p>
+
+            <h2>Welcome to SURAJ TOY 🧸</h2>
+
+            <p>
+                SURAJ TOY is an online toy store where you can find
+                fun, colorful and affordable toys for children.
+            </p>
+
+            <p>
+                We provide home delivery and convenient payment options.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <p>CONTACT US</p>
+
+        <h2>We Are Here To Help ❤️</h2>
+
+        <div class="contact-info">
+
+            <div>
+                📱
+                <h3>Phone</h3>
+                <p>7908179776</p>
+            </div>
+
+            <div>
+                📧
+                <h3>Email</h3>
+                <p>chakrabortydhiraj198@gmail.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>🧸 SURAJ TOY boy</h2>
+
+        <p>Making Childhood More Colorful 🌈</p>
+
+        <p>© 2026 SURAJ TOY</p>
+
+    </footer>
+
+
+    <!-- CART POPUP -->
+    <div id="cartBox" class="cart-box">
+
+        <div class="cart-content">
+
+            <button class="close" onclick="closeCart()">×</button>
+
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <h3>
+                Total: ₹<span id="cartTotal">0</span>
+            </h3>
+
+            <button class="checkout-button" onclick="openCheckout()">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHECKOUT -->
+    <div id="checkoutBox" class="cart-box">
+
+        <div class="checkout-content">
+
+            <button class="close" onclick="closeCheckout()">×</button>
+
+            <h2>🚚 Delivery Details</h2>
+
+            <form onsubmit="placeOrder(event)">
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Full Delivery Address"
+                    required
+                ></textarea>
+
+
+                <h3>Payment Method</h3>
+
+                <label class="payment-option">
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cod"
+                        checked
+                    >
+                    💵 Cash on Delivery
+                </label>
+
+                <label class="payment-option">
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="online"
+                    >
+                    💳 Online Payment
+                </label>
+
+                <button type="submit" class="order-button">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
